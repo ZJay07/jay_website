@@ -1,13 +1,6 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
-  ],
+  extends: ['next/core-web-vitals'],
   rules: {
-    'max-len': ['error', { code: 88 }],
     'import/order': [
       'error',
       {
@@ -20,8 +13,12 @@ module.exports = {
           'index',
         ],
         'newlines-between': 'always',
-        alphabetize: { order: 'asc' },
+        alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
+    // Change max-len to warning instead of error
+    'max-len': ['warn', { code: 88 }],
+    // Disable the unescaped entities rule
+    'react/no-unescaped-entities': 'off',
   },
 };

@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/utils/motion';
-import SectionWrapper from './SectionWrapper';
 import Image from 'next/image';
+
+import { fadeIn } from '@/utils/motion';
 
 import {
   thoughtmachine,
@@ -14,6 +14,8 @@ import {
   macquarieGroup,
   kaya,
 } from '../assets';
+
+import SectionWrapper from './SectionWrapper';
 
 function ExperienceCard({
   title,

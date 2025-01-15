@@ -1,8 +1,8 @@
 import Bio from '@/components/Bio';
+import Contact from '@/components/Contact';
 import Experience from '@/components/Experience';
 import PersonalProjects from '@/components/PersonalProjects';
 import RelatedWork from '@/components/RelatedWork';
-import Contact from '@/components/Contact';
 
 export default function Home() {
   return (

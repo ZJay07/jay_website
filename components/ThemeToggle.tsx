@@ -1,8 +1,8 @@
 'use client';
 
-import { useTheme } from 'next-themes';
-import { SunIcon, MoonIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { SunIcon, MoonIcon } from 'lucide-react';
+import { useTheme } from 'next-themes';
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
