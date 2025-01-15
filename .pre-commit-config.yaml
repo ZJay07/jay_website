@@ -1,0 +1,48 @@
+ci:
+  autofix_prs: false
+
+default_language_version:
+  python: system
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-toml
+      - id: check-yaml
+      - id: pretty-format-json
+        args: [--autofix, --no-ensure-ascii, --no-sort-keys]
+      - id: check-ast
+      - id: debug-statements
+      - id: check-docstring-first
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.1
+    hooks:
+      - id: ruff
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@3.0.3
+          - prettier-plugin-go-template@0.0.15
+
+  - repo: https://github.com/woodruffw/zizmor-pre-commit
+    rev: v1.1.1
+    hooks:
+      - id: zizmor
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v9.18.0"  # Use the latest version
+    hooks:
+      - id: eslint
+        args: ["--fix"]
+
