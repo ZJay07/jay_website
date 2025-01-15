@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import { useTheme } from 'next-themes'
-import { SunIcon, MoonIcon } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { useTheme } from 'next-themes';
+import { SunIcon, MoonIcon } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
   return (
     <motion.button
@@ -20,6 +20,5 @@ export default function ThemeToggle() {
         <MoonIcon className="w-5 h-5 text-[#2563eb]" />
       )}
     </motion.button>
-  )
+  );
 }
-

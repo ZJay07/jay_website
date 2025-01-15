@@ -1,9 +1,6 @@
 ci:
   autofix_prs: false
 
-default_language_version:
-  python: system
-
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
@@ -40,9 +37,4 @@ repos:
     hooks:
       - id: zizmor
 
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: "v9.18.0"  # Use the latest version
-    hooks:
-      - id: eslint
-        args: ["--fix"]
-
+exclude: 'my_env/|.venv/'

@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
-import { motion } from "framer-motion"
-import { fadeIn } from "@/utils/motion"
-import SectionWrapper from "./SectionWrapper"
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/utils/motion';
+import SectionWrapper from './SectionWrapper';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 function Contact() {
   return (
     <div className="relative">
       <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn('up', 'tween', 0.2, 1)}
         className="max-w-xl mx-auto text-center"
       >
         <h2 className="text-4xl font-bold mb-12 text-[#0f172a] dark:text-[#94a3b8]">
@@ -45,15 +45,14 @@ function Contact() {
           </motion.a>
         </div>
         <motion.div
-          variants={fadeIn("up", "spring", 0.3, 0.75)}
+          variants={fadeIn('up', 'spring', 0.3, 0.75)}
           className="mt-16 text-sm text-[#475569] dark:text-[#64748b] border-t border-gray-200 dark:border-gray-700 pt-8"
         >
           © {new Date().getFullYear()} Your Name. All rights reserved.
         </motion.div>
       </motion.div>
     </div>
-  )
+  );
 }
 
-export default SectionWrapper(Contact, "contact")
-
+export default SectionWrapper(Contact, 'contact');

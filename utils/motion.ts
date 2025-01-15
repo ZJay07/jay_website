@@ -1,21 +1,29 @@
-export const staggerContainer = (staggerChildren?: number, delayChildren?: number) => {
+export const staggerContainer = (
+  staggerChildren?: number,
+  delayChildren?: number,
+) => {
   return {
     hidden: {},
     show: {
       transition: {
         staggerChildren: staggerChildren || 0.1,
-        delayChildren: delayChildren || 0
-      }
-    }
+        delayChildren: delayChildren || 0,
+      },
+    },
   };
 };
 
-export const fadeIn = (direction: string, type: string, delay: number, duration: number) => {
+export const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number,
+) => {
   return {
     hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-      opacity: 0
+      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
+      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+      opacity: 0,
     },
     show: {
       x: 0,
@@ -25,9 +33,8 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
         type,
         delay,
         duration,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 };
-

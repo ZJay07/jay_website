@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
-import { motion } from "framer-motion"
-import { staggerContainer } from "@/utils/motion"
+import { motion } from 'framer-motion';
+import { staggerContainer } from '@/utils/motion';
 
-const SectionWrapper = (Component: React.ComponentType, idName: string) => 
+const SectionWrapper = (Component: React.ComponentType, idName: string) =>
   function HOC() {
     return (
       <motion.section
@@ -18,8 +18,7 @@ const SectionWrapper = (Component: React.ComponentType, idName: string) =>
         </span>
         <Component />
       </motion.section>
-    )
-  }
+    );
+  };
 
-export default SectionWrapper
-
+export default SectionWrapper;
