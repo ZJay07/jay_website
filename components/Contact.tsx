@@ -50,7 +50,7 @@ function Contact() {
           variants={fadeIn('up', 'spring', 0.3, 0.75)}
           className="mt-16 text-sm text-[#475569] dark:text-[#64748b] border-t border-gray-200 dark:border-gray-700 pt-8"
         >
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Jay Choy. All rights reserved.
         </motion.div>
       </motion.div>
     </div>
