@@ -43,4 +43,13 @@ repos:
     hooks:
       - id: zizmor
 
+  - repo: local
+    hooks:
+      - id: typescript-check
+        name: TypeScript Check
+        entry: npx tsc --noEmit
+        language: system
+        pass_filenames: false
+        types: [ts, tsx]
+
 exclude: 'my_env/|.venv/|.eslintrc.json|tsconfig.json'

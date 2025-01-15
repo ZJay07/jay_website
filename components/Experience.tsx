@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import { fadeIn } from '@/utils/motion';
 
@@ -29,7 +29,7 @@ function ExperienceCard({
   company: string;
   date: string;
   points: string[];
-  logo: string;
+  logo: StaticImageData;
   index: number;
 }) {
   return (
