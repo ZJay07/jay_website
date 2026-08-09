@@ -72,7 +72,7 @@ function Experience() {
     {
       title: 'Software Engineer',
       company: 'Kaya (YC 21)',
-      date: 'Oct 2024 - Present',
+      date: 'Oct 2024 - May 2025',
       logo: kaya,
       points: [
         "Improved search speed by implementing Kaya Search, a vector-based search system optimized for marketers' needs.",
