@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 
-import { fadeIn } from '@/utils/motion';
 
 import {
   thoughtmachine,
@@ -16,6 +15,8 @@ import {
 } from '../assets';
 
 import SectionWrapper from './SectionWrapper';
+
+import { fadeIn } from '@/utils/motion';
 
 function ExperienceCard({
   title,
