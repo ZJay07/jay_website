@@ -12,6 +12,12 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      # Read-only ESLint + Prettier check + tsc; same as `npm run check`.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      # jlint (https://pypi.org/project/jay_lint/): import order, unused imports,
+      # whitespace and line length. Needs Python 3.9+.
+      - run: pip install jay_lint==0.1.0
+      # Read-only ESLint + Prettier check + jlint + tsc; same as `npm run check`.
       # pleasew downloads the Please version pinned in .plzconfig.
       - run: bash ./pleasew check
