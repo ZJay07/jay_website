@@ -8,5 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - run: npm install
-      - run: npm run type-check
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      # Read-only ESLint + Prettier check + tsc; same as `npm run check`.
+      # pleasew downloads the Please version pinned in .plzconfig.
+      - run: sh ./pleasew check

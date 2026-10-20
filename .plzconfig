@@ -1,0 +1,19 @@
+; Please (https://please.build) is optional: every target just wraps an npm script.
+; Needs Linux/macOS (or WSL); there is no native Windows build of plz.
+[please]
+version = 17.33.0
+
+[parse]
+buildfilename = BUILD.plz
+
+[alias "lint"]
+cmd = run //:lint --
+desc = Check with ESLint, Prettier and tsc; plz lint --fix edits files instead
+
+[alias "check"]
+cmd = run //:lint -- --check
+desc = Read-only ESLint, Prettier and tsc check (used by CI)
+
+[alias "push"]
+cmd = run //:push --
+desc = Run the checks, commit what is staged and push: plz push -m "message"

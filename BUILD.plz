@@ -1,0 +1,15 @@
+genrule(
+    name = "lint",
+    srcs = ["scripts/lint.sh"],
+    outs = ["lint.sh"],
+    cmd = "cp $SRCS $OUT",
+    binary = True,
+)
+
+genrule(
+    name = "push",
+    srcs = ["scripts/push.sh"],
+    outs = ["push.sh"],
+    cmd = "cp $SRCS $OUT",
+    binary = True,
+)
