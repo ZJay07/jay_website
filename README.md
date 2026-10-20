@@ -22,8 +22,8 @@ unused imports, whitespace, line length) and `tsc`. Vercel's build only runs
 jlint needs Python 3.9 or newer: `pip install jay_lint` (0.2.0 or later).
 Its settings live in `jlint.toml` (paths, line length, strict mode), so plain `jlint`
 checks the whole project and `jlint --fix` fixes it; `jlint --fix` also wraps long
-comments. More detail, including how it is wired in, how to release a new version and
-troubleshooting, is in [docs/linting.md](docs/linting.md).
+comments. For the linter itself (why it exists, its features, how it works and how to
+release it) see [docs/jay_lint.md](docs/jay_lint.md).
 
 ```bash
 npm run check          # read-only: ESLint, Prettier check, jlint, tsc
