@@ -8,11 +8,11 @@ buildfilename = BUILD.plz
 
 [alias "lint"]
 cmd = run //:lint --
-desc = Check with ESLint, Prettier and tsc; plz lint --fix edits files instead
+desc = Check with ESLint, Prettier, jlint and tsc; plz lint --fix edits files instead
 
 [alias "check"]
 cmd = run //:lint -- --check
-desc = Read-only ESLint, Prettier and tsc check (used by CI)
+desc = Read-only ESLint, Prettier, jlint and tsc check (used by CI)
 
 [alias "push"]
 cmd = run //:push --
