@@ -18,7 +18,7 @@ export default function PersonalProjects() {
     {
       name: 'Personal Linter',
       description:
-        'Developed a custom linter using Abstract Syntax Trees (AST) to enhance code quality, shared for peer use.',
+        'Built a linter for Python and TypeScript/JavaScript from scratch, parsing code with the Python ast module and tree-sitter. It checks import order, unused imports, whitespace and line length, can auto-fix most of them (including wrapping long comments), reads its settings from a config file, and is published on PyPI as jay_lint.',
       github: 'https://github.com/ZJay07/jay_lint',
       demo: null,
     },
