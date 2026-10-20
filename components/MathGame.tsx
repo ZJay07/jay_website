@@ -129,8 +129,8 @@ export default function MathGame() {
         Math Sprint
       </h1>
       <p className="text-[#475569] dark:text-[#94a3b8] mb-8">
-        Answer as many +, −, ×, ÷ questions as you can before time runs out
-        — one wrong answer ends the round.
+        Answer as many +, −, ×, ÷ questions as you can before time runs out —
+        one wrong answer ends the round.
       </p>
 
       {highScore !== null && (

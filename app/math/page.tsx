@@ -2,7 +2,8 @@ import MathGame from '@/components/MathGame';
 
 export const metadata = {
   title: 'Math Sprint - Jay Choy',
-  description: 'A quick arithmetic game: answer as many questions as you can before time runs out.',
+  description:
+    'A quick arithmetic game: answer as many questions as you can before time runs out.',
 };
 
 export default function MathPage() {
