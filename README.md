@@ -9,17 +9,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Docker
-
-To run locally on docker, first run
-
-```bash
-docker build -t pre-commit-env .
-```
-
-then
-
-```bash
-docker run --rm -v $(pwd):/app pre-commit-env
-```
