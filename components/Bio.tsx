@@ -2,10 +2,9 @@
 
 import { motion } from 'framer-motion';
 
-import SectionWrapper from './SectionWrapper';
-
 import { fadeIn } from '@/utils/motion';
 
+import SectionWrapper from './SectionWrapper';
 
 function Bio() {
   return (
