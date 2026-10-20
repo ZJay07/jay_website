@@ -1,0 +1,4 @@
+# jlint (https://pypi.org/project/jay_lint/) settings; run plain `jlint` from this folder.
+paths = ["app", "components", "lib", "utils"]
+max-line-length = 88
+strict = true

@@ -19,7 +19,10 @@ unused imports, whitespace, line length) and `tsc`. Vercel's build only runs
 
 ### With npm (Windows, macOS or Linux)
 
-jlint needs Python 3.9 or newer: `pip install jay_lint`.
+jlint needs Python 3.9 or newer: `pip install jay_lint` (0.2.0 or later).
+Its settings live in `jlint.toml` (paths, line length, strict mode), so plain `jlint`
+checks the whole project and `jlint --fix` fixes it; `jlint --fix` also wraps long
+comments.
 
 ```bash
 npm run check          # read-only: ESLint, Prettier check, jlint, tsc
