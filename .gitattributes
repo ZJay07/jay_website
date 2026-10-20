@@ -1,2 +1,5 @@
 *.sh text eol=lf
 pleasew text eol=lf
+.plzconfig text eol=lf
+BUILD.plz text eol=lf
+scripts/*.sh text eol=lf

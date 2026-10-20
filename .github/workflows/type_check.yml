@@ -14,4 +14,4 @@ jobs:
       - run: npm ci
       # Read-only ESLint + Prettier check + tsc; same as `npm run check`.
       # pleasew downloads the Please version pinned in .plzconfig.
-      - run: sh ./pleasew check
+      - run: bash ./pleasew check

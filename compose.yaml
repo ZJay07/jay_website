@@ -1,0 +1,13 @@
+services:
+  plz:
+    build: .
+    volumes:
+      - .:/app
+      # Keep Linux-built dependencies and Please's cache out of the Windows folder.
+      - node_modules:/app/node_modules
+      - plz-out:/app/plz-out
+      - please:/root/.please
+volumes:
+  node_modules:
+  plz-out:
+  please:
