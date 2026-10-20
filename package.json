@@ -10,8 +10,9 @@
     "prebuild": "npm run type-check && npm run lint",
     "type-check": "tsc --noEmit",
     "format:check": "prettier --check --end-of-line auto app components lib utils *.ts *.mjs",
-    "fix": "next lint --fix && prettier --write --end-of-line auto app components lib utils *.ts *.mjs",
-    "check": "npm run lint && npm run format:check && npm run type-check",
+    "jlint": "jlint --strict --max-line-length 88 app components lib utils",
+    "fix": "next lint --fix && jlint --fix --max-line-length 88 app components lib utils && prettier --write --end-of-line auto app components lib utils *.ts *.mjs",
+    "check": "npm run lint && npm run format:check && npm run jlint && npm run type-check",
     "push": "bash scripts/push.sh"
   },
   "dependencies": {

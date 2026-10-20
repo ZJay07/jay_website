@@ -12,14 +12,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Lint, format and check
 
-The same checks run locally, in GitHub Actions and on Vercel's build: ESLint,
-Prettier (check only) and `tsc`.
+`npm run check` runs four read-only checks, locally and in GitHub Actions:
+ESLint, Prettier, [jlint](https://pypi.org/project/jay_lint/) (import order,
+unused imports, whitespace, line length) and `tsc`. Vercel's build only runs
+`tsc` and ESLint, so it does not need Python.
 
 ### With npm (Windows, macOS or Linux)
 
+jlint needs Python 3.9 or newer: `pip install jay_lint`.
+
 ```bash
-npm run check          # read-only: ESLint, Prettier check, tsc
-npm run fix            # edits files: eslint --fix and prettier --write
+npm run check          # read-only: ESLint, Prettier check, jlint, tsc
+npm run jlint          # just jlint
+npm run fix            # edits files: eslint --fix, jlint --fix, prettier --write
 npm run push -- -m "message"   # runs check, commits what is staged, pushes
 ```
 

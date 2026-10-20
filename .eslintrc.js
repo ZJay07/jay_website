@@ -16,8 +16,8 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
-    // Change max-len to warning instead of error
-    'max-len': ['warn', { code: 88 }],
+    // Line length is checked by jlint (strings, comments and URLs are exempt)
+    'max-len': 'off',
     // Disable the unescaped entities rule
     'react/no-unescaped-entities': 'off',
   },
