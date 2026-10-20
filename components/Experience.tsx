@@ -5,15 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 
 import { fadeIn } from '@/utils/motion';
 
-import {
-  thoughtmachine,
-  unifyai,
-  buzzSocial,
-  foodCLUB,
-  macquarie,
-  macquarieGroup,
-  kaya,
-} from '../assets';
+import { thoughtmachine, unifyai, macquarieGroup, kaya } from '../assets';
 
 import SectionWrapper from './SectionWrapper';
 
